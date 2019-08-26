@@ -8,9 +8,9 @@ class RecipesController < ApplicationController
   end
 
   def new
-    @recipe = Recipe.new	    @recipe = Recipe.new
+    @recipe = Recipe.new	    
     2.times do |i|
-      @recipe.ingredients.build()
+    @recipe.ingredients.build()
     end
   end	  end
 
