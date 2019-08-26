@@ -17,7 +17,7 @@ class RecipesController < ApplicationController
   def create
     @recipe = Recipe.create(recipe_params)
     redirect_to recipe_path(@recipe)
-  end	  
+  end
 
   def update
     recipe = Recipe.find(params[:id])
@@ -35,8 +35,3 @@ class RecipesController < ApplicationController
 
 
 end 
-
-
-  
-
-
