@@ -11,7 +11,7 @@ class RecipesController < ApplicationController
     @recipe = Recipe.new
     @recipe.ingredients.build()
   end
-  
+
   def create
     @recipe = Recipe.create(recipe_params)
     redirect_to recipe_path(@recipe)
@@ -32,4 +32,4 @@ class RecipesController < ApplicationController
   end
 
 
-end 
+end
